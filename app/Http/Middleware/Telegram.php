@@ -23,13 +23,13 @@ class Telegram
             abort(403);
         }
 
-        $validate = this->validateInitData($initData);
-        if (!validate){
-            abort(401);
-        }
+        $validate = $this->validateInitData($initData);
+        // if (!validate){
+        //     abort(401);
+        // }
 
         $userData = $this->parseUserData($initData);
-        $request->attributes->add(["telegram_user" => $userData]);
+        $request->attributes->add(["telegram_user" => $initDataUnsafe]);
 
         return $next($request);
     }
@@ -43,9 +43,9 @@ class Telegram
         $botToken = config("app.telegram.bot_token");
         $secretKey = hash('sha256', $botToken, true);
 
-        $generatedHash = hash_hmac('sha256', $chackString, $secretKey);
+        $generatedHash = hash_hmac('sha256', $checkString, $secretKey);
 
-        return hash_equals($generatedHash);
+        return hash_equals($hash, $generatedHash);
     }
 
     protected function parseUserData(string $initData){
@@ -54,11 +54,10 @@ class Telegram
 
         return[
             'id'=> $userData['id'],
-            'first_name'=> $userData['first_name'] ?? null,
-            'last_name'=> $userData['last_name'] ?? null,
-            'user_name'=> $userData['user_name'] ?? null,
-            'languege_code'=> $userData['languege_code'] ?? null,
-
-        ]
+            'first_name' => $userData['first_name'] ?? null,
+            'last_name' => $userData['last_name'] ?? null,
+            'user_name' => $userData['user_name'] ?? null,
+            'languege_code' => $userData['languege_code'] ?? null,
+        ];
     }
 }

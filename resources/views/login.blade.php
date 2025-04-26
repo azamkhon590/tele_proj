@@ -22,19 +22,26 @@
             console.log(initDataUnsafe);
 
             fetch("/login",{
-                mathod: "POST",
+                method: "POST",
                 headers: {
-                    'Content_Type': application/json
-                    'Accept': application/json
-                }
+                    'Content_Type': "application/json",
+                    'Accept': "application/json",
+                },
 
-                body: JSON.stringify({initData: initData})
+                body: JSON.stringify({init_data: initData, init_data_unsafe: initDataUnsafe}),
             })
 
-            .then(response => response.text())
-            .then(data => {
-                console.log(data);
-            })
+                .then(response => response.text())
+                .then(data => {
+                    if($data.status === 200){
+                        return window.location.replace("/app");
+                    } else {
+                        return window.location.replace("/error");
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                })
         }
     </script>
 </body>
