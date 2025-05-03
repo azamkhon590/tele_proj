@@ -16,8 +16,8 @@
     <script>
         if (window.Telegram && window.Telegram.WebApp) {
             telegram = window.Telegram.WebApp;
-            const initData = telegram.initData; // Строка с initData
-            const initDataUnsafe = telegram.initDataUnsafe; // Строка с initData
+            const initData = telegram.initData;
+            const initDataUnsafe = telegram.initDataUnsafe;
             telegram.disableVerticalSwipes();
             console.log(initDataUnsafe);
 
