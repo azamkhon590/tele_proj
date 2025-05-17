@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c1f24;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+header,
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+main {
+    margin-top: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 65px;
+}
+
+/* index */
+
+.score_block {
+    display: flex;
+}
+
+.score_block img {
+    height: 35px;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.legau {
+
+    align-items: center;
+    color: #c4c4c4;
+    margin-top: 5px;
+}
+
+section img {
+    width: 275px;
+    height: 240px;
+    margin-top: 30px;
+}
+
+.energy_score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.line {
+    height: 22px;
+    width: 250px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 60px;
+}
+
+.btn {
+    color: #ffffff;
+    height: 80px;
+    width: 70px;
+    margin: 12px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.btn p {
+    position: relative;
+    top: 10px;
+}
+
+i {
+    position: relative;
+    top: 15px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Account page */
+
+hr {
+    width: 100%;
+}
+
+.acc_menu {
+    display: flex;
+    padding: 12px 40px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.acc_menu_item {
+    color: #ffffff;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 18px;
+}
+
+.stats_item {
+    display: flex;
+    margin: 25px 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.stats_item p {
+    font-size: 25px;
+}
+
+/* settings */
+
+.settigs_block {
+    margin-top: 15px;
+}
+
+.settigs_item {
+    color: #ffffff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px 90px;
+    margin: 15px;
+    height: 25px;
+    width: 175px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.settigs_item p {
+    position: relative;
+    right: 60px;
+    text-align: start;
+    font-size: 25px;
+}
+
+.settigs_item span {
+    position: relative;
+    left: 80px;
+}
+
+/* task_page */
+
+.task {
+    height: 450px;
+    overflow: auto;
+}
+
+.task_item {
+    color: #ffffff;
+    display: flex;
+    text-align: start;
+    align-items: center;
+    padding: 10px 70px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+.task_item a {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.task_item .name {
+    position: relative;
+    right: 45px;
+}
+
+.task_item i {
+    font-size: 50px;
+    position: relative;
+    right: 50px;
+    top: 7px;
+}
+
+.task_item span {
+    position: relative;
+    left: 50px;
+}
