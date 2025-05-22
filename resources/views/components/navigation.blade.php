@@ -9,8 +9,8 @@
 .menu {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    top: 60px;
+    position: fixed;
+    top: 540px;
 }
 
 .btn {
@@ -45,7 +45,7 @@ i {
                     </a>
                 </li>
                 <li class="menu_item">
-                    <a href="task.html" class="btn"><i class="fa-solid fa-list-check"></i>
+                    <a href="/task" class="btn"><i class="fa-solid fa-list-check"></i>
                         <p>TASK</p>
                     </a>
                 </li>

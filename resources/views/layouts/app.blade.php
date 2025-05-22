@@ -26,8 +26,10 @@ body {
     background-color: #1c1f24;
 }
 
-h1 {
+.title {
     color: #ffffff;
+    text-align: center;
+    margin-top: 25px;
 }
 
 header,

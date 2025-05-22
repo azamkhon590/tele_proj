@@ -24,3 +24,11 @@ Route::get("/profile", function() {
     return view("pages.profile");
 });
 
+Route::get("/task", function() {
+    return view("pages.task");
+});
+
+Route::get("/setting", function() {
+    return view("pages.setting");
+});
+

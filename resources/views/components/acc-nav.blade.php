@@ -24,10 +24,10 @@
                     <a href="" class="acc_menu_item">Ref</a>
                 </li>
                 <li>
-                    <a href="account.html" class="acc_menu_item">Stats</a>
+                    <a href="/profile" class="acc_menu_item">Stats</a>
                 </li>
                 <li>
-                    <a href="settings.html" class="acc_menu_item">Settings</a>
+                    <a href="/setting" class="acc_menu_item">Settings</a>
                 </li>
             </div>
 </section>

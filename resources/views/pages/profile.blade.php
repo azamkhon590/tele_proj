@@ -27,7 +27,7 @@
 @endsection
 
 @section("content")
-        
+        <x-acc-nav />
         <section>
             <div class="stats">
                 <h1 class="title">Stats</h1>
