@@ -12,7 +12,7 @@
     <title>TELEGRAM MINI APP</title>
 </head>
 <body>
-
+    
     <script>
         if (window.Telegram && window.Telegram.WebApp) {
             telegram = window.Telegram.WebApp;

@@ -1,9 +1,9 @@
 @extends("layouts.app")
 
 @section("title", "home")
-
+  
 @section("styles")
-<style>
+    <style>
 .score_block {
     display: flex;
 }
@@ -54,14 +54,14 @@ section img {
     background-color: rgba(255, 255, 255, 0.3);
 }
 </style>
-
 @endsection
 
+
 @section("content")
-    <header>
+   <header>
         <div class="score_block">
             <img src="Photoroom.png" alt="coin">
-            <div class="score">0</div>
+            <div class="score"></div>
         </div>
         <div class="legau">
             <p>Dimond ></p>
@@ -75,7 +75,8 @@ section img {
     </section>
     <section>
         <img src="Photoroom.png" alt="coin">
-    </section> 
-    <livewire:Counter></livewire:Counter>
-
+    </section>
+        <!-- <livewire:Counter /> -->
+    
+    
 @endsection
