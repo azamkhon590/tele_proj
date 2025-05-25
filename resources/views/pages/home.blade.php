@@ -76,7 +76,7 @@ section img {
     <section>
         <img src="Photoroom.png" alt="coin">
     </section>
-        <!-- <livewire:Counter /> -->
+        <livewire:Counter />
     
     
 @endsection
