@@ -4,7 +4,7 @@
 
 @section("styles")
 <style>
-    .score_block {
+.score_block {
     display: flex;
 }
 
@@ -34,6 +34,7 @@ section img {
     width: 275px;
     height: 240px;
     margin-top: 30px;
+    z-index: 5;
 }
 
 .energy_score {
@@ -57,7 +58,6 @@ section img {
 @endsection
 
 @section("content")
-    <!-- <livewire:Counter /> -->
     <header>
         <div class="score_block">
             <img src="Photoroom.png" alt="coin">
@@ -75,5 +75,7 @@ section img {
     </section>
     <section>
         <img src="Photoroom.png" alt="coin">
-    </section>
+    </section> 
+    <livewire:Counter></livewire:Counter>
+
 @endsection

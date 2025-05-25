@@ -13,13 +13,6 @@
 </head>
 <body>
 
-    <div class="main">
-        <h1>Приложение</h1>
-        <img src="" alt="">
-        <p>имя пользователя:</p>
-        <button class="btn">Кнопка</button>
-    </div>
-
     <script>
         if (window.Telegram && window.Telegram.WebApp) {
             telegram = window.Telegram.WebApp;

@@ -57,8 +57,9 @@ footer {
 
     <main>
         @yield("content")
-        <x-navigation />
+        
     </main>
+    <x-navigation />
 
     @yield("scripts")
 </body>
