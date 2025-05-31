@@ -3,11 +3,12 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\CountCoin;
 
 class Counter extends Component
 {
-    public $count = 0;
-
+    public $count;
+    
     public function increment()
     {
         $this->count++;
@@ -15,6 +16,7 @@ class Counter extends Component
 
     public function render()
     {
+        
         return view('livewire.counter');
     }
 }

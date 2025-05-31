@@ -90,7 +90,7 @@ section img {
         <img src="Photoroom.png" alt="coin">
     </section>
 
-<button wire:click="increment"></button>
+<button wire:click="increments"></button>
 </div>
 
 

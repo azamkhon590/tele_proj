@@ -16,8 +16,6 @@ Route::middleware(\App\Http\Middleware\Telegram::class)->group(function (){
     Route::post("/login", [\App\Http\Controllers\WebController::class, "login"]);
 });
 
-
-
 Route::get("/home", function() {
     return view("pages.home");
 });
