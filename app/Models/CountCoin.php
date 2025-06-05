@@ -10,8 +10,6 @@ class CountCoin extends Model
     use HasFactory;
 
         protected $fillable = [
-        'name',
-        'telegram_id',
         'count',
     ];
 }

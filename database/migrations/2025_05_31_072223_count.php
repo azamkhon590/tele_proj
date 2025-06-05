@@ -13,8 +13,7 @@ return new class extends Migration
     {
         Schema::create('counts', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(App\Models\CountCoin::class);
-            $table->integer("count");         
+            $table->integer("count")->default(0);       
             $table->timestamps();
         });
     }
