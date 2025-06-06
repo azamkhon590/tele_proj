@@ -5,11 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class CountCoin extends Model
+class Counter extends Model
 {
-    use HasFactory;
 
-        protected $fillable = [
-        'count',
-    ];
+    protected $fillable = ['count'];
 }

@@ -3,5 +3,5 @@
 @section("title", "home")
 
 @section("content")
-    <livewire:Counter />
+    <livewire:CounterComponent />
 @endsection
