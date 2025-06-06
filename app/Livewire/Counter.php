@@ -32,8 +32,8 @@ class Counter extends Component
 
     private function saveToDatabase()
     {
-        $record = CountCoin::firstOrCreate(['id' => 1], ['value' => 0]);
-        $record->update(['value' => $this->count]);
+        $record = CountCoin::firstOrCreate(['id' => 1], ['count' => 0]);
+        $record->update(['count' => $this->count]);
     }
 
     public function render()
