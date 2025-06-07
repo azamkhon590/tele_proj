@@ -12,7 +12,6 @@ class CounterComponent extends Component
 
     public function mount()
     {
-        // Создаем или получаем существующую запись
         $counter = Counter::firstOrCreate();
         $this->counterId = $counter->id;
         $this->count = $counter->count;
