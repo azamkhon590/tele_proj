@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('nick_name')->nullable();
             $table->boolean('telegram_premium')->default(false);
             $table->string('photo_url')->nullable();
-            $table->string("telegram_id")->unique();         
+            $table->string("telegram_id")->unique();       
             $table->rememberToken();
             $table->timestamps();
         });

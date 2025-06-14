@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('login');
+    return view("pages.home");
 });
 
 Route::middleware("auth_web")->group(function(){

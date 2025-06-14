@@ -29,6 +29,12 @@
     color: #c4c4c4;
     margin-top: 5px;
 }
+.update {
+
+    align-items: end;
+    color: #c4c4c4;
+    margin-top: 5px;
+}
 
 section img {
     width: 275px;
@@ -61,7 +67,7 @@ section img {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.3);
 }
-    button{
+    .inc{
         border-radius: 50%;
         position: relative;
         left: 35px;
@@ -71,13 +77,17 @@ section img {
         opacity: 0;
     }
 </style>
-       <header>
+    <h3>{{ auth()->user()->name }}</h3>
+    <header>
         <div class="score_block">
             <img src="Photoroom.png" alt="coin">
             <div class="score">{{$count}}</div>
         </div>
         <div class="legau">
             <p>Dimond ></p>
+        </div>
+        <div class="update">
+            <button wire:click="increment">Update</button>
         </div>
     </header>
     <section>
@@ -90,5 +100,5 @@ section img {
         <img src="Photoroom.png" alt="coin">
     </section>
 
-<button wire:click="increment"></button>
+<button class="inc" wire:click="increment"></button>
 </div>

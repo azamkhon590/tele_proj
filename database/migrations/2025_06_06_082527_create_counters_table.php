@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('counters', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->integer('count')->default(0);
             $table->timestamps();
         });
