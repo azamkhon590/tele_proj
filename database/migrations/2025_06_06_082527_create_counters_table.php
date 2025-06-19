@@ -15,6 +15,11 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->integer('count')->default(0);
+            $table->integer('updated')->default(1);
+            $table->integer('level')->default(1);
+            $table->integer('xp')->default(0);
+            $table->integer('coins')->default(0);
+            $table->integer('clickPower')->default(0);
             $table->timestamps();
         });
     }

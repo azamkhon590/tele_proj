@@ -1,5 +1,10 @@
 <div>
 <style>
+
+    .account_info{
+        position: relative;
+        bottom: 20px;
+    }
     div{
         height: 100%;
     }
@@ -14,7 +19,7 @@
     margin-right: 5px;
 }
 
-.score {
+.score {    
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -77,8 +82,11 @@ section img {
         opacity: 0;
     }
 </style>
-    <h3>{{ auth()->user()->name }}</h3>
+    
     <header>
+        <div class="account_info">
+            <h3>{{ auth()->user()->name }}</h3>
+        </div>
         <div class="score_block">
             <img src="Photoroom.png" alt="coin">
             <div class="score">{{$count}}</div>

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relation\BelongsTo;
 class Counter extends Model
 {
 
-    protected $fillable = ['count', 'user_id'];
+    protected $fillable = ['count', 'user_id', 'updated', 'level', 'xp', 'coins', 'clickPower'];
 
     public function user(): BelongsTo {
         return $this->belongsTo(User::class);
